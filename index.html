@@ -900,86 +900,6 @@ section { padding: 7rem 3rem; }
   font-weight: 400;
 }
 
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1.2rem;
-}
-
-.form-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.2rem;
-}
-
-.form-field {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-.form-field label {
-  font-family: var(--font-display);
-  font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: rgba(255,255,255,0.45);
-}
-
-.form-field input,
-.form-field textarea {
-  font-family: var(--font-body);
-  font-size: 1rem;
-  padding: 1rem 1.2rem;
-  border: 1px solid rgba(255,255,255,0.12);
-  border-radius: 8px;
-  background: rgba(255,255,255,0.04);
-  color: var(--white);
-  outline: none;
-  transition: all 0.3s ease;
-  font-weight: 300;
-}
-
-.form-field input:focus,
-.form-field textarea:focus {
-  border-color: var(--orange);
-  background: rgba(219, 74, 43, 0.05);
-}
-
-.form-field input::placeholder,
-.form-field textarea::placeholder {
-  color: rgba(255,255,255,0.2);
-}
-
-.form-field textarea {
-  resize: vertical;
-  min-height: 120px;
-}
-
-.form-submit {
-  font-family: var(--font-display);
-  font-size: 0.95rem;
-  font-weight: 600;
-  background: var(--orange);
-  color: var(--white);
-  border: none;
-  padding: 1.1rem 2.5rem;
-  border-radius: 100px;
-  cursor: pointer;
-  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-  align-self: flex-start;
-  display: flex;
-  align-items: center;
-  gap: 0.7rem;
-  margin-top: 0.5rem;
-}
-
-.form-submit:hover {
-  background: var(--white);
-  color: var(--black);
-  transform: translateY(-2px);
-}
 
 /* ====== FOOTER ====== */
 footer {
@@ -1331,38 +1251,26 @@ footer {
       </p>
       <p class="contact-tagline reveal stagger-3">310 Strategies — Incubating Learning for a New Era</p>
     </div>
-    <form class="contact-form reveal stagger-2" onsubmit="event.preventDefault();">
-      <div class="form-row">
-        <div class="form-field">
-          <label for="name">Name</label>
-          <input type="text" id="name" placeholder="Your full name">
-        </div>
-        <div class="form-field">
-          <label for="email">Email</label>
-          <input type="email" id="email" placeholder="you@institution.edu">
-        </div>
-      </div>
-      <div class="form-row">
-        <div class="form-field">
-          <label for="institution">Institution / Organization</label>
-          <input type="text" id="institution" placeholder="Your institution">
-        </div>
-        <div class="form-field">
-          <label for="phone">Phone <span style="opacity:0.5;">(optional)</span></label>
-          <input type="tel" id="phone" placeholder="(555) 000-0000">
-        </div>
-      </div>
-      <div class="form-field">
-        <label for="message">Message</label>
-        <textarea id="message" placeholder="Tell us about your vision and the audiences you hope to serve"></textarea>
-      </div>
-      <button type="submit" class="form-submit">
-        Start the Conversation
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
-          <path d="M3 8h10M9 4l4 4-4 4"/>
-        </svg>
-      </button>
-    </form>
+    <div class="reveal stagger-2" style="min-height: 523px;">
+      <iframe
+        src="https://api.leadconnectorhq.com/widget/form/HEfsGNkIAJ39S6M0IYo0"
+        style="width:100%;height:100%;border:none;border-radius:4px"
+        id="inline-HEfsGNkIAJ39S6M0IYo0"
+        data-layout="{'id':'INLINE'}"
+        data-trigger-type="alwaysShow"
+        data-trigger-value=""
+        data-activation-type="alwaysActivated"
+        data-activation-value=""
+        data-deactivation-type="neverDeactivate"
+        data-deactivation-value=""
+        data-form-name="310 STRATEGIES"
+        data-height="523"
+        data-layout-iframe-id="inline-HEfsGNkIAJ39S6M0IYo0"
+        data-form-id="HEfsGNkIAJ39S6M0IYo0"
+        title="310 STRATEGIES"
+      ></iframe>
+      <script src="https://link.msgsndr.com/js/form_embed.js"></script>
+    </div>
   </div>
 </section>
 
